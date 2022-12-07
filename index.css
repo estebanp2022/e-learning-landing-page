@@ -183,7 +183,7 @@ p {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 4em;
 }
 
 footer {
@@ -206,15 +206,14 @@ footer {
 }
 
 @media (min-width: 48em) {
+  .container {
+    width: 689px;
+  }
 }
 
 @media (min-width: 90em) {
-  /* typography */
-  .heading-xl,
-  .heading-l,
-  .heading-m,
-  .heading-s {
-    font-weight: 800;
+  .container {
+    width: 1110px;
   }
 
   .heading-s,
