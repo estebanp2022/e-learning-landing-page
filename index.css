@@ -73,10 +73,6 @@ body {
   background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
 }
 
-/* img {
-  max-width: 100%;
-} */
-
 .card-svg {
   width: 56px;
   position: absolute;
@@ -111,6 +107,7 @@ p {
   border: none;
   padding: 0;
   color: var(--white);
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .hero-btn,
@@ -148,16 +145,19 @@ p {
   margin-bottom: 2.375em;
 }
 
-.hero {
+/* .hero {
   position: relative;
-}
+} */
 
 .hero-right {
-  width: 327px;
-  height: 301px;
+  width: 343px;
+  height: 330px;
   background-image: url("./starter-code/assets/image-hero-mobile.png");
-  background-size: contain;
+
   background-repeat: no-repeat;
+  background-position: top;
+  transform: scale(1);
+  margin-bottom: 66px;
 }
 
 .main-card {
@@ -215,9 +215,9 @@ footer {
 
 @media (min-width: 48em) {
   .container {
-    width: 100%;
-    position: relative;
-    max-width: 689px;
+    width: 768px;
+    padding: 24px 40px 86px 39px;
+    margin: 0;
   }
 
   .nav {
@@ -225,10 +225,10 @@ footer {
   }
 
   .hero {
+    position: relative;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    margin-bottom: 93px;
+    margin-bottom: 180px;
   }
 
   .hero-left {
@@ -237,39 +237,38 @@ footer {
 
   .hero-right {
     position: absolute;
-    width: 640.71;
-    height: 640px;
-    top: -250px;
-    right: 0;
+    height: 650px;
+    width: 370px;
+    top: -220px;
+    right: -21px;
     background-image: url("./starter-code/assets/image-hero-tablet.png");
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: -5%;
+    margin-bottom: 0;
+    transform: scale(1.1);
   }
-
-  /* picture img {
-    position: absolute;
-    top: -240px;
-    right: -300px;
-    width: 640.71px;
-    height: 640px;
-  } */
 
   .card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    width: 768px;
+    width: 690px;
   }
 
   .main-card,
   .card {
-    width: 340px;
+    width: 339px;
     height: 259px;
   }
 
   .card {
     padding: 56px 21px 32px 32px;
+  }
+
+  .btn {
+    font-size: 1em;
   }
 
   .heading-m {
@@ -286,13 +285,14 @@ footer {
   }
 
   footer {
-    margin-top: 40px;
+    margin: 0;
   }
 }
 
 @media (min-width: 90em) {
   .container {
-    max-width: 1110px;
+    width: 1110px;
+    padding: 0;
   }
 
   .nav {
@@ -305,8 +305,7 @@ footer {
   }
 
   .hero {
-    /* position: relative; */
-    margin-bottom: 300px;
+    margin-bottom: 200px;
   }
 
   .hero-left {
@@ -315,6 +314,8 @@ footer {
   }
 
   .hero-right {
+    border: 2px solid red;
+
     background-image: url("./starter-code/assets/image-hero-desktop.png");
   }
 
@@ -329,17 +330,11 @@ footer {
     height: 56px;
   }
 
-  /* picture img {
-    position: absolute;
-    width: 991.63px;
-    height: 936.92px;
-    top: -446px;
-    right: -500px;
-  } */
-
   .card-container {
     width: 1110px;
+    height: 748px;
     gap: 30px;
+    margin-bottom: 8.75em;
   }
 
   .main-card,
@@ -388,5 +383,9 @@ footer {
   .body-s {
     font-size: 1.125rem;
     font-weight: 700;
+  }
+
+  .btn {
+    font-size: 1.125em;
   }
 }
