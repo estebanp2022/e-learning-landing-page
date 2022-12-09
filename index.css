@@ -8,6 +8,8 @@
   --white: #ffffff;
   --pink-gradient: linear-gradient(#ff6f48, #f02aa6);
   --purple-gradient: linear-gradient(#4851ff, #f02aa6);
+  --pink-gradient-hover: linear-gradient(#fa9a80, #f479c7);
+  --purple-gradient-hover: linear-gradient(#9095fb, #ff84d2);
 }
 
 /* typography */
@@ -47,7 +49,7 @@
 .body-m {
   font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 24px;
+  margin-bottom: 1.5em;
 }
 
 .body-s {
@@ -70,7 +72,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #d6d9ff 100%);
 }
 
 .card-svg {
@@ -108,6 +110,7 @@ p {
   padding: 0;
   color: var(--white);
   font-family: "Plus Jakarta Sans", sans-serif;
+  cursor: pointer;
 }
 
 .hero-btn,
@@ -118,17 +121,30 @@ p {
 
 .hero-btn {
   background-color: var(--dk-blue);
+  z-index: 3;
+}
+
+.hero-btn:hover {
+  background-color: #666ca3;
 }
 
 .hero-left-btn {
   width: 167px;
   height: 56px;
-  margin-bottom: 44px;
+  margin-bottom: 2.75em;
   background-image: var(--pink-gradient);
+}
+
+.hero-left-btn:hover {
+  background-image: var(--pink-gradient-hover);
 }
 
 .footer-btn {
   background-image: var(--purple-gradient);
+}
+
+.footer-btn:hover {
+  background-image: var(--purple-gradient-hover);
 }
 
 .container {
@@ -145,15 +161,10 @@ p {
   margin-bottom: 2.375em;
 }
 
-/* .hero {
-  position: relative;
-} */
-
 .hero-right {
   width: 343px;
   height: 330px;
   background-image: url("./starter-code/assets/image-hero-mobile.png");
-
   background-repeat: no-repeat;
   background-position: top;
   transform: scale(1);
@@ -290,6 +301,9 @@ footer {
 }
 
 @media (min-width: 90em) {
+  body {
+    position: relative;
+  }
   .container {
     width: 1110px;
     padding: 0;
@@ -305,7 +319,7 @@ footer {
   }
 
   .hero {
-    margin-bottom: 200px;
+    margin-bottom: 300px;
   }
 
   .hero-left {
@@ -314,9 +328,16 @@ footer {
   }
 
   .hero-right {
-    border: 2px solid red;
-
+    width: 650px;
+    height: 900px;
     background-image: url("./starter-code/assets/image-hero-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10%;
+    transform: scale(1.1);
+    top: -380px;
+    right: -130px;
+    position: absolute;
   }
 
   .hero-left-btn {
