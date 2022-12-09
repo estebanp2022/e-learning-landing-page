@@ -135,6 +135,7 @@ p {
 }
 
 .container {
+  margin: 0 auto;
   width: 343px;
   margin: 1rem;
 }
@@ -247,6 +248,10 @@ footer {
     padding: 56px 21px 32px 32px;
   }
 
+  .heading-m {
+    margin-top: 28px;
+  }
+
   .heading-s {
     margin: 0 0 16px;
   }
@@ -266,6 +271,60 @@ footer {
     width: 1110px;
   }
 
+  .nav {
+    margin: 20px 0 185px;
+  }
+
+  .logo {
+    width: 111.17px;
+    height: 27.68px;
+  }
+
+  .hero {
+    position: relative;
+    margin-bottom: 300px;
+  }
+
+  .hero-left {
+    width: 457px;
+    height: 359px;
+  }
+
+  .hero-left-btn {
+    width: 167px;
+    height: 63px;
+  }
+
+  .hero-btn,
+  .footer-btn {
+    width: 167px;
+    height: 56px;
+  }
+
+  picture img {
+    position: absolute;
+    width: 991.63px;
+    height: 936.92px;
+    top: -446px;
+    right: -500px;
+  }
+
+  .card-container {
+    width: 1110px;
+    gap: 30px;
+  }
+
+  .main-card,
+  .card {
+    width: 350px;
+    height: 322px;
+  }
+
+  .footer {
+    width: 1110px;
+    padding: 40px 0;
+  }
+
   .heading-s,
   .body-m,
   .body-s {
@@ -283,6 +342,7 @@ footer {
   }
 
   .heading-m {
+    margin-top: 36px;
     line-height: 40px;
     font-size: 2rem;
   }
@@ -294,6 +354,7 @@ footer {
   .body-m {
     font-size: 1.125rem;
     font-weight: 500;
+    line-height: 28px;
   }
 
   .body-s {
