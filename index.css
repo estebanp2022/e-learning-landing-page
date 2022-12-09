@@ -73,9 +73,9 @@ body {
   background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
 }
 
-img {
+/* img {
   max-width: 100%;
-}
+} */
 
 .card-svg {
   width: 56px;
@@ -148,6 +148,18 @@ p {
   margin-bottom: 2.375em;
 }
 
+.hero {
+  position: relative;
+}
+
+.hero-right {
+  width: 327px;
+  height: 301px;
+  background-image: url("./starter-code/assets/image-hero-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .main-card {
   width: 343px;
   height: 120px;
@@ -188,8 +200,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
   padding: 2.25em 1em 0.5em;
+  width: 100%;
 }
 
 .attribution {
@@ -203,7 +215,9 @@ footer {
 
 @media (min-width: 48em) {
   .container {
-    width: 689px;
+    width: 100%;
+    position: relative;
+    max-width: 689px;
   }
 
   .nav {
@@ -211,7 +225,6 @@ footer {
   }
 
   .hero {
-    position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -222,13 +235,24 @@ footer {
     width: 398px;
   }
 
-  picture img {
+  .hero-right {
+    position: absolute;
+    width: 640.71;
+    height: 640px;
+    top: -250px;
+    right: 0;
+    background-image: url("./starter-code/assets/image-hero-tablet.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  /* picture img {
     position: absolute;
     top: -240px;
     right: -300px;
     width: 640.71px;
     height: 640px;
-  }
+  } */
 
   .card-container {
     display: flex;
@@ -268,7 +292,7 @@ footer {
 
 @media (min-width: 90em) {
   .container {
-    width: 1110px;
+    max-width: 1110px;
   }
 
   .nav {
@@ -281,13 +305,17 @@ footer {
   }
 
   .hero {
-    position: relative;
+    /* position: relative; */
     margin-bottom: 300px;
   }
 
   .hero-left {
     width: 457px;
     height: 359px;
+  }
+
+  .hero-right {
+    background-image: url("./starter-code/assets/image-hero-desktop.png");
   }
 
   .hero-left-btn {
@@ -301,13 +329,13 @@ footer {
     height: 56px;
   }
 
-  picture img {
+  /* picture img {
     position: absolute;
     width: 991.63px;
     height: 936.92px;
     top: -446px;
     right: -500px;
-  }
+  } */
 
   .card-container {
     width: 1110px;
