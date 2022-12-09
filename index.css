@@ -77,11 +77,6 @@ img {
   max-width: 100%;
 }
 
-/* picture {
-  width: 327px;
-  height: 301px;
-} */
-
 .card-svg {
   width: 56px;
   position: absolute;
@@ -208,6 +203,61 @@ footer {
 @media (min-width: 48em) {
   .container {
     width: 689px;
+  }
+
+  .nav {
+    margin-bottom: 99px;
+  }
+
+  .hero {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 93px;
+  }
+
+  .hero-left {
+    width: 398px;
+  }
+
+  picture img {
+    position: absolute;
+    top: -240px;
+    right: -300px;
+    width: 640.71px;
+    height: 640px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 768px;
+  }
+
+  .main-card,
+  .card {
+    width: 340px;
+    height: 259px;
+  }
+
+  .card {
+    padding: 56px 21px 32px 32px;
+  }
+
+  .heading-s {
+    margin: 0 0 16px;
+  }
+
+  .footer {
+    padding: 36px 40px;
+    margin-bottom: 0;
+  }
+
+  footer {
+    margin-top: 40px;
   }
 }
 
